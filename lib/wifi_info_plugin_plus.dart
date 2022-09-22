@@ -124,4 +124,9 @@ class WifiInfoWrapper {
   bool get isHiddenSSid {
     return this._isHiddenSSID;
   }
+
+  @override
+  String toString() {
+    return 'bssid:$_bssid, ssid:$_ssid, ip:$_ip, macAddress:$_macAddress, linkSpeed:$_linkSpeed, singalStrength:$_singalStrength, frequency:$_frequency, connectionType:$_connectionType';
+  }
 }
